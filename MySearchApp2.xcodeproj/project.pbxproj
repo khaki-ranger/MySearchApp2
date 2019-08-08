@@ -13,6 +13,7 @@
 		D1BFF78B22FBD56B00C017C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1BFF78A22FBD56B00C017C5 /* Assets.xcassets */; };
 		D1BFF78E22FBD56B00C017C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1BFF78C22FBD56B00C017C5 /* LaunchScreen.storyboard */; };
 		D1BFF79622FBF90400C017C5 /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BFF79522FBF90400C017C5 /* ItemSearchResultSet.swift */; };
+		D1BFF79822FC12AD00C017C5 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BFF79722FC12AD00C017C5 /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D1BFF78D22FBD56B00C017C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1BFF78F22FBD56B00C017C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1BFF79522FBF90400C017C5 /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
+		D1BFF79722FC12AD00C017C5 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				D1BFF78322FBD56900C017C5 /* AppDelegate.swift */,
 				D1BFF78522FBD56900C017C5 /* ViewController.swift */,
-				D1BFF78722FBD56900C017C5 /* Main.storyboard */,
+				D1BFF79722FC12AD00C017C5 /* ItemTableViewCell.swift */,
 				D1BFF79522FBF90400C017C5 /* ItemSearchResultSet.swift */,
+				D1BFF78722FBD56900C017C5 /* Main.storyboard */,
 				D1BFF78A22FBD56B00C017C5 /* Assets.xcassets */,
 				D1BFF78C22FBD56B00C017C5 /* LaunchScreen.storyboard */,
 				D1BFF78F22FBD56B00C017C5 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1BFF79822FC12AD00C017C5 /* ItemTableViewCell.swift in Sources */,
 				D1BFF78622FBD56900C017C5 /* ViewController.swift in Sources */,
 				D1BFF79622FBF90400C017C5 /* ItemSearchResultSet.swift in Sources */,
 				D1BFF78422FBD56900C017C5 /* AppDelegate.swift in Sources */,
