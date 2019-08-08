@@ -28,7 +28,7 @@ class ResultSet: Codable {
 
 // 検索結果の先頭を格納するクラス
 class FirstObject: Codable {
-    var reuslt: Result
+    var result: Result
 
     private enum CodingKeys: String, CodingKey {
         case result = "Result"
