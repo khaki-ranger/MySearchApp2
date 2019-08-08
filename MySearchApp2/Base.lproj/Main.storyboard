@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +27,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SXB-a6-TSw">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="SXB-a6-TSw">
                                 <rect key="frame" x="0.0" y="72" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SXB-a6-TSw" id="SJ4-ZK-X9Z">
@@ -68,6 +69,9 @@
                                         <constraint firstItem="YYI-gV-xz5" firstAttribute="trailing" secondItem="oMe-Ly-Kzi" secondAttribute="trailing" id="zKU-rU-N4H"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="80a-b9-evr" kind="show" id="QFw-ss-Rqi"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -80,6 +84,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPL-W2-2mP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1166" y="123"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CXQ-13-hMK">
+            <objects>
+                <viewController id="80a-b9-evr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ddD-dB-4Xq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEC-Jv-kDt">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jU5-Xc-oyr" firstAttribute="bottom" secondItem="AEC-Jv-kDt" secondAttribute="bottom" id="RnL-JQ-PDS"/>
+                            <constraint firstItem="jU5-Xc-oyr" firstAttribute="trailing" secondItem="AEC-Jv-kDt" secondAttribute="trailing" id="V5d-Dr-KlW"/>
+                            <constraint firstItem="AEC-Jv-kDt" firstAttribute="leading" secondItem="jU5-Xc-oyr" secondAttribute="leading" id="Zg9-IH-5Rp"/>
+                            <constraint firstItem="AEC-Jv-kDt" firstAttribute="top" secondItem="jU5-Xc-oyr" secondAttribute="top" id="bN4-Dl-j4g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jU5-Xc-oyr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbq-cE-ExE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916" y="123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sgq-eE-eI5">
