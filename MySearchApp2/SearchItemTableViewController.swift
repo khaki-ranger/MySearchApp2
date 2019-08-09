@@ -31,7 +31,7 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDelegate 
     }
     
     // キーボードのsearchボタンがタップされたときに呼び出される
-    func searchBarResultsListButtonClicked(_ searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         // 入力された文字の取り出し
         guard let inputText = searchBar.text else {
             // 入力なし
